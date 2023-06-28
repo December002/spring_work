@@ -5,12 +5,15 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>/views/users/info.jsp</title>
+<title>/views/file/upload.jsp</title>
 </head>
 <body>
 	<div class="container">
-		<h3>개인정보</h3>
-		<p> 아이디는 <strong>${id }</strong> 입니다. 어쩌구... 저쩌구...</p>
+		<h3>Alert</h3>
+		<p>
+			<strong>${dto.orgFileName }</strong> 파일이 업로드 되었습니다.
+			<a href="${pageContext.request.contextPath}/file/list">확인</a>
+		</p>
 	</div>
 </body>
 </html>

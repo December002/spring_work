@@ -5,12 +5,12 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>/views/users/info.jsp</title>
+<title>/views/users/logout.jsp</title>
 </head>
 <body>
-	<div class="container">
-		<h3>개인정보</h3>
-		<p> 아이디는 <strong>${id }</strong> 입니다. 어쩌구... 저쩌구...</p>
-	</div>
+	<script>
+		alert("로그 아웃 되었습니다.");
+		location.href="${pageContext.request.contextPath}/";
+	</script>
 </body>
 </html>
