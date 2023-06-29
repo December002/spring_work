@@ -16,8 +16,8 @@ public class CafeDaoImpl implements CafeDao {
 	
 	@Override
 	public List<CafeDto> getList(CafeDto dto) {
-		List<CafeDto> list=session.selectList("cafe.getList", dto);
-		return list;
+		return session.selectList("cafe.getList", dto);
+		
 	}
 
 	@Override
@@ -38,12 +38,12 @@ public class CafeDaoImpl implements CafeDao {
 
 	@Override
 	public CafeDto getData(CafeDto dto) {
-		return session.selectOne("cafe.getData", dto);
+		return session.selectOne("cafe.getData2", dto);
 	}
 
 	@Override
 	public void addViewCount(int num) {
-		session.insert("cafe.addViewCount", num);
+		session.update("cafe.addViewCount", num);
 	}
 
 	@Override
