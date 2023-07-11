@@ -22,7 +22,6 @@ public class UsersController {
 	//의존객체 주입 받기(DI)
 	@Autowired
 	private UsersService service;
-	
 	//회원 탈퇴 요청 처리 
 	@RequestMapping("/users/delete")
 	public ModelAndView delete(HttpSession session, ModelAndView mView) {

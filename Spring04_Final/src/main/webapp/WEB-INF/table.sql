@@ -93,4 +93,24 @@ CREATE TABLE board_gallery(
    regdate DATE -- 이미지 업로드 날짜 
 );
 
-CREATE SEQUENCE board_gallery_seq;
+CREATE SEQUENCE board_gallery_seq;	
+
+
+CREATE TABLE instar_users(
+	num NUMBER PRIMARY KEY,
+	id VARCHAR2(100),
+	password VARCHAR2(100),
+	email VARCHAR2(100)
+	);
+	
+CREATE SEQUENCE instar_users_seq;
+
+CREATE TABLE instar_post(
+	num NUMBER PRIMARY KEY,
+	writer VARCHAR2(100),
+	caption VARCHAR2(100),
+	imagePath VARCHAR2(100),
+	regdate DATE
+);
+
+CREATE SEQUENCE instar_post_seq;
