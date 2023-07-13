@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.example</groupId>
-	<artifactId>Boot05_MyBatis</artifactId>
+	<artifactId>Boot06_WebConfig</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>Boot05_MyBatis</name>
+	<name>Boot06_WebConfig</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>11</java.version>
@@ -66,8 +66,6 @@
 		    <version>1.18.28</version>
 		    <scope>provided</scope>
 		</dependency>
-		
-      
 	</dependencies>
 
 	<build>
