@@ -47,6 +47,7 @@ public class FileDownView extends AbstractView {
 	      //다운로드할 파일에서 읽어들일 스트림 객체 생성하기
 	      FileInputStream fis=new FileInputStream(path);
 	      //다운로드 시켜주는 작업을 한다. (실제 파일 데이터와 원본파일명을 보내줘야한다.)
+	    
 	      
 	      //한글 파일명 세부처리 
 	      String encodedName=URLEncoder.encode(orgFileName, "utf-8");

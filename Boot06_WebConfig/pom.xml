@@ -59,13 +59,10 @@
          <groupId>javax.servlet</groupId>
          <artifactId>jstl</artifactId>
       </dependency>
-      <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
-		<dependency>
-		    <groupId>org.projectlombok</groupId>
-		    <artifactId>lombok</artifactId>
-		    <version>1.18.28</version>
-		    <scope>provided</scope>
-		</dependency>
+      <dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+	  </dependency>
 		<!-- IOUtils 클래스를 사용하기 위한 라이브러리 -->
         <dependency>
 	         <groupId>commons-io</groupId>
