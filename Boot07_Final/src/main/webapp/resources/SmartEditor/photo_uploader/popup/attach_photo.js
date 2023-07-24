@@ -334,16 +334,15 @@
     	var tempFile,
     		sUploadURL;
     	
-    	sUploadURL= 'file_uploader_html5.jsp'; 	//upload URL
+    	//jsp 페이지에 요청하던 요청경로를 SmartEditorController 에 요청을 할 수 있도록 수정한다.
+    	sUploadURL= '/boot07/editor_upload'; 	//upload URL
     	
     	//파일을 하나씩 보내고, 결과를 받음.
     	for(var j=0, k=0; j < nImageInfoCnt; j++) {
     		tempFile = htImageInfo['img'+j];
     		try{
 	    		if(!!tempFile){
-	    			//Ajax통신하는 부분. 파일과 업로더할 url을 전달한다.
-	    			callAjaxForHTML5(tempFile,sUploadURL);
-	    			k += 1;
+	    			//Ajax통신하는 부분. 파일과 업로더할 url을 전달한다.0
 	    		}
 	    	}catch(e){}
     		tempFile = null;
